@@ -21,12 +21,10 @@
     "@ethersproject/abi": "^5.0.12",
     "bs58": "^5.0.0",
     "buffer": "^6.0.3",
+    "cross-env": "^7.0.3",
     "ethers": "^6.7.1",
     "solc": "^0.8.21",
     "solc-typed-ast": "^16.0.0",
-    "cross-env": "^7.0.3"
-  },
-  "devDependencies": {
-    
+    "web3": "^4.1.1"
   }
 }
