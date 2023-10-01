@@ -19,6 +19,7 @@
     "@ethereumjs/util": "^9.0.0",
     "@ethereumjs/vm": "^7.0.0",
     "@ethersproject/abi": "^5.0.12",
+    "bignumber.js": "^9.1.2",
     "bs58": "^5.0.0",
     "buffer": "^6.0.3",
     "cross-env": "^7.0.3",
