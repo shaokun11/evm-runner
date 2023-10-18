@@ -3,7 +3,7 @@
 let url = "https://eth-sepolia.public.blastapi.io";
 import Web3 from "web3";
 const web3 = new Web3(new Web3.providers.HttpProvider(url));
-
+web3.eth.getBlock(10000).then(console.log)
 
 web3.eth.getTransactionReceipt("0x3a95507cf1327e0818e2e01a9b88d71467e72d5b3f381bae5ff5cb95fbc84493").then(res=>{
     console.log(res.logs)
