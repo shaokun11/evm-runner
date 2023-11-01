@@ -1,4 +1,5 @@
-import { ethers } from "ethers";
+import {ethers} from "ethers";
+
 let coder = ethers.AbiCoder.defaultAbiCoder();
 let code = coder.encode(["string", "string"], ["USDC", "USDC"]).slice(2);
 // console.log("--------code---", code);
@@ -166,3 +167,12 @@ console.log(
         ],
     ])
 );
+
+
+let abi2 = [
+    "function execute(bytes calldata commands, bytes[] calldata inputs, uint256 deadline) external payable"
+]
+
+let abi2_inter = new ethers.Interface(multi_abi);
+
+abi2_inter.encodeFunctionData("execute", [])
