@@ -11,7 +11,7 @@ let p = new ethers.JsonRpcProvider(url);
 let a = ethers.Transaction.from(
     "0xf86a8086d55698372431831e848094f0109fc8df283027b6285cc889f5aa624eac1f55843b9aca008025a009ebb6ca057a0535d6186462bc0b465b561c94a295bdb0621fc19208ab149a9ca0440ffd775ce91a833ab410777204d5341a6f9fa91216a6f3ee2c051fea6a0428"
 ).toJSON();
-// console.log(a)
+console.log(a)
 
 // let i = 0;
 // while (i < 50) {
