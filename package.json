@@ -17,6 +17,7 @@
     "@ethereumjs/common": "^4.0.0",
     "@ethereumjs/evm": "^2.0.0",
     "@ethereumjs/rlp": "^5.0.0",
+    "concat-stream": "https://github.com/shaokun11/concat-stream",
     "@ethereumjs/statemanager": "^2.0.0",
     "@ethereumjs/util": "^9.0.0",
     "@ethereumjs/vm": "^7.0.0",

@@ -82,37 +82,4 @@ let x = sum(a.stake_info.map((it) => +it.amount));
 let y = sum(a.transfer_info.map((it) => +it.amount));
 console.log(x, y);
 
-let x1 = {
-    jsonrpc: "2.0",
-    result: {
-        data: '{"message":{"from":"\\"0x3253716256786d345833476739745052584566775459456461596a786676426e6572366d6d6635585457346864334a547634\\"","to":"\\"0x3253716256786d345833476739745052584566775459456461596a786676426e6572366d6d6635585457346864334a547634\\"","nonce":"\\"0\\"","payload":"\\"0x68656c6c6f206d6f7665\\""},"signature":"this is signature"}',
-        header: "",
-    },
-    id: 1,
-};
 
-console.log(JSON.parse(x1.result.data));
-
-// server {
-//     listen 80 default_server;
-//     listen [::]:80 default_server;
-//     server_name graph.multiple.fi;
-//     location ^~ /.well-known/acme-challenge {
-//        default_type "text/plain";
-//        rewrite /.well-known/acme-challenge/(.*) /$1 break;
-//        root     /data;
-//     }
-
-//     location = /.well-known/acme-challenge/ {
-//       return 404;
-//     }
-
-//     location / {
-//            proxy_pass http://localhost:8000;
-//            proxy_set_header Upgrade $http_upgrade;
-//            proxy_set_header X-Forwarded-For $remote_addr;
-//            proxy_set_header X-Real-IP $remote_addr;
-//            proxy_set_header Host $host:$server_port;
-//            proxy_cache_bypass $http_upgrade;
-//        }
-//   }
