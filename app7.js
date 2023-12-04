@@ -21,9 +21,12 @@ console.log(a)
 // }
 
 let wallet = ethers.Wallet.createRandom();
+// let wallet = new ethers.Wallet("0x56289e99c94b6912bfc12adc093c9b51124f0dc54ac7a766b2bc5ccf558d8027");
 console.log({
     privateKey: wallet.privateKey,
     address: wallet.address,
     pubKey: wallet.publicKey,
 });
+
+
 
